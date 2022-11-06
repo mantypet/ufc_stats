@@ -1,8 +1,11 @@
+source(here::here("R/global.R"))
 
-#' UFC stats
+#' Load UFC stats
 #'
 #' @examples 
 #' devtools::install_github("mtoto/ufc.stats")
 #'
-library(ufc.stats)
-data("ufc_stats")
+
+load_ufc_stats <- function() {
+  data("ufc_stats", package = "ufc.stats")
+}
